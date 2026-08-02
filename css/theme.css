@@ -1,0 +1,32 @@
+@font-face {
+    font-family: Commissioner;
+    src: url("./Commissioner.ttf");
+}
+
+:root {
+    --main-text-color: rgb(220, 220, 220);
+    --text-glow-color: rgb(255, 255, 255);
+}
+
+body {
+    background-color: darkslategray;
+    background-image: url("../backgrounds/Reflection.png");
+    background-size:cover;
+    background-position: 80%;
+    
+    font-family: Commissioner;
+    color: var(--main-text-color);
+    text-align: center;
+}
+
+.glow-text {
+    text-shadow: 0 0 10px var(--text-glow-color);
+}
+
+.shadow-text {
+    text-shadow: black 1px 1px;
+}
+
+.dark-text {
+    text-shadow: 0 0 10px black;
+}
