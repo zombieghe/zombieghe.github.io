@@ -8,15 +8,32 @@
     --text-glow-color: rgb(255, 255, 255);
 }
 
+* {
+    margin: 0;
+}
+
 body {
     background-color: darkslategray;
-    background-image: url("../backgrounds/Reflection.png");
-    background-size:cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../backgrounds/CatWalks.png");
+    background-size: cover;
+    /* background-blend-mode: multiply; */
     background-position: 80%;
+    background-attachment: fixed;
     
     font-family: Commissioner;
     color: var(--main-text-color);
     text-align: center;
+
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+footer {
+    color: darkgrey;
+    font-size: small;
 }
 
 .glow-text {
@@ -29,4 +46,43 @@ body {
 
 .dark-text {
     text-shadow: 0 0 10px black;
+}
+
+.rating {
+    color: gold;
+    font-size: larger;
+    font-weight: bold;
+    margin: 2px;
+}
+
+.games-layout {
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0px, 460px));
+
+    max-width: max-content;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 920px) {
+    .games-layout {
+        grid-template-columns: repeat(2, minmax(0, 460px));
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .games-layout {
+        grid-template-columns: repeat(1, minmax(0, 460px));
+    }
+}
+
+.games-layout > div {
+    padding: 2%;
+}
+
+.games-layout-image {
+    height: auto;
+    width: 100%;
 }
