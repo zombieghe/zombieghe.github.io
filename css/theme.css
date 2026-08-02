@@ -4,8 +4,7 @@
 }
 
 :root {
-    --main-text-color: rgb(220, 220, 220);
-    --text-glow-color: rgb(255, 255, 255);
+    --main-text-color: rgb(255, 255, 255);
 }
 
 * {
@@ -23,6 +22,7 @@ body {
     font-family: Commissioner;
     color: var(--main-text-color);
     text-align: center;
+    text-shadow: black 1px 1px;
 
     padding: 20px;
 }
@@ -34,18 +34,6 @@ section {
 footer {
     color: darkgrey;
     font-size: small;
-}
-
-.glow-text {
-    text-shadow: 0 0 10px var(--text-glow-color);
-}
-
-.shadow-text {
-    text-shadow: black 1px 1px;
-}
-
-.dark-text {
-    text-shadow: 0 0 10px black;
 }
 
 .rating {
@@ -64,6 +52,8 @@ footer {
 
     margin-left: auto;
     margin-right: auto;
+
+    justify-content: center;
 }
 
 @media only screen and (max-width: 920px) {
@@ -85,4 +75,73 @@ footer {
 .games-layout-image {
     height: auto;
     width: 100%;
+    border-radius: 6px;
+}
+
+.music-layout {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(0, 128px));
+
+    max-width: 70%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    justify-content: center;
+}
+
+.music-layout > div {
+    padding: 2%;
+}
+
+.music-layout-image {
+    height: auto;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.footer-image {
+    height: auto;
+    
+    width: 50%;
+    max-width: 560px;
+
+    padding-bottom: 60px;
+    padding-top: 60px;
+
+    border-radius: 6px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background-size: cover;
+}
+
+.footer-image-oneshot {
+    background-position-y: 70%;
+    background-position-x: 80%;
+
+    background-image: url("../footer-images/oneshot.png");
+}
+
+.footer-image-peak {
+    background-position-y: 60%;
+    background-position-x: 30%;
+
+    background-image: url("../footer-images/peak.jpg");
+}
+
+.footer-image-lethalCompany {
+    background-position-y: 60%;
+    background-position-x: 50%;
+
+    background-image: url("../footer-images/lethalCompany.jpg");
+}
+
+.footer-image-ultrakill {
+    background-position-y: 40%;
+    background-position-x: 80%;
+
+    background-image: url("../footer-images/ultrakill.jpg");
 }
