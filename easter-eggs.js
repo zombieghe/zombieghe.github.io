@@ -1,19 +1,19 @@
 const Pluto = document.getElementById("Pluto")
-const PlutoAudio = new Audio("./Sounds/PlutoLaugh.ogg")
+const PlutoAudio = new Audio("./sounds/PlutoLaugh.ogg")
 
 const Oneshot = document.getElementById("Niko")
-const OneshotAudio1 = new Audio("./Sounds/Oneshot1.wav")
-const OneshotAudio2 = new Audio("./Sounds/Oneshot2.wav")
+const OneshotAudio1 = new Audio("./sounds/Oneshot1.wav")
+const OneshotAudio2 = new Audio("./sounds/Oneshot2.wav")
 var OneshotCounter = 0
 
 const Lethal = document.getElementById("LethalCompany")
-const LethalAudio = new Audio("./Sounds/LethalCompany.mp3")
+const LethalAudio = new Audio("./sounds/LethalCompany.mp3")
 var LethalBoomboxToggled = false
 LethalAudio.loop = true
 
 const Minos = document.getElementById("Minos")
-const MinosAudio1 = new Audio("./Sounds/MinosSpeech.mp3")
-const MinosAudio2 = new Audio("./Sounds/MinosDie.wav")
+const MinosAudio1 = new Audio("./sounds/MinosSpeech.mp3")
+const MinosAudio2 = new Audio("./sounds/MinosDie.wav")
 var MinosDidSpeech = false
 var MinosDead = false
 
