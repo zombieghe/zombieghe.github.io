@@ -1,0 +1,180 @@
+@font-face {
+    font-family: Commissioner;
+    src: url("./Commissioner.ttf");
+}
+
+:root {
+    --text-color: rgb(255, 255, 255);
+    --link-color: rgb(255, 255, 255);
+    --text-font: Commissioner;
+}
+
+* {
+    margin: 0;
+
+    scrollbar-width: none;
+}
+
+body {
+    background-color: darkslategrey;
+
+
+    /* cursor: url("../faveicon.png"), auto; */
+}
+
+p {
+    color: var(--text-color);
+    font-family: var(--text-font);
+    font-size: 16px;
+    font-weight: 350;
+}
+
+a {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+h1 {
+    color: var(--text-color);
+    font-family: var(--text-font);
+    font-size: 32px;
+    stroke: black;
+}
+
+img {
+    -webkit-user-drag: none;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.quote::before {
+    content: open-quote;
+    font-size: 32px;
+    margin-right: 10px;
+}
+
+.quote::after {
+    content: close-quote;
+    font-size: 32px;
+    margin-left: 10px;
+    position: absolute;
+}
+
+.main-header {
+    font-size: 36px;
+}
+
+.you-can-scroll {
+    max-width: 1660px;
+    padding-left: 18px;
+    padding-top: 18px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-writing {
+    max-width: 1460px;
+    width: 70%;
+
+    margin: auto;
+
+    padding-top: 20px;
+}
+
+.page-background {
+    position: fixed;
+    z-index: -1;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-color: black;
+}
+
+
+.page-background-img {
+    object-fit: cover;
+
+    object-position: 80%, 80%;
+
+    height: 100vh;
+    width: 100vw;
+
+    opacity: 0.8;
+
+    filter: blur(6px);
+}
+
+.end-page-links {
+    padding-top: 32px;
+    display: flex;
+}
+
+.end-page-links > p {
+    padding-right: 8px;
+}
+
+/* flex layout means the games i like layout* */
+.flex-layout {
+    display: flex;
+
+    flex-direction: row;
+
+    flex-wrap: wrap;
+
+    flex: 0 1;
+
+    justify-content: center;
+}
+
+.flex-layout > div {
+    margin: 10px;
+
+    max-width: 460px;
+}
+
+.scroll-div {
+    padding-bottom: 100%;
+}
+
+.paragraph-spacing {
+    padding: 10px;
+}
+
+.section-spacing {
+    padding: 25px;
+}
+
+.downscaleable-image {
+    max-width: 100%;
+
+    object-fit: cover;
+}
+
+.image-caption {
+    font-style: italic;
+
+    padding-top: 4px;
+}
+
+.round-image {
+    border-radius: 4px;
+}
+
+.end-page-image {
+    height: 100vh;
+    width: 100vw;
+}
+
+.end-page-image-img {
+    object-fit: cover;
+
+    object-position: 80%, 80%;
+
+    height: 100vh;
+    width: 100vw;
+}
